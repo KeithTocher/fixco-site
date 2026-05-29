@@ -32,78 +32,142 @@ export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen">
 
-      {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+{/* HERO */}
+<section className="max-w-7xl mx-auto px-6 py-16">
+  <div className="grid lg:grid-cols-2 gap-16 items-center">
 
+    {/* Left Side */}
+    <div>
+      <Image
+        src="/images/fixco-logo.png"
+        alt="FixCo Property Ltd"
+        width={220}
+        height={110}
+        priority
+        className="mb-8"
+      />
+
+      <p
+        className="uppercase tracking-[6px] font-semibold mb-6"
+        style={{ color: "#EEFF00" }}
+      >
+        Practical Solutions. Professional Finish.
+      </p>
+
+      <h1 className="text-5xl md:text-7xl font-bold leading-[0.95] mb-8">
+        Property
+        <br />
+        Improvements &
+        <br />
+        Maintenance
+      </h1>
+
+      <p className="text-xl text-zinc-300 max-w-xl mb-10">
+        Professional property improvement and maintenance services
+        across Edinburgh, Midlothian, East Lothian and West Lothian.
+      </p>
+
+      <div className="flex flex-wrap gap-4">
+        <a
+          href="tel:07968817387"
+          className="px-8 py-4 rounded-xl font-semibold text-black transition-all hover:scale-105"
+          style={{ backgroundColor: "#EEFF00" }}
+        >
+          Call Now
+        </a>
+
+        <a
+          href="mailto:info@fixcoproperty.com"
+          className="border border-zinc-700 px-8 py-4 rounded-xl hover:border-white transition-all"
+        >
+          Email Us
+        </a>
+      </div>
+    </div>
+
+    {/* Right Side */}
+    <div className="relative">
+      <div className="overflow-hidden rounded-3xl shadow-2xl">
         <Image
-          src="/images/fixco-logo.png"
-          alt="FixCo Property Ltd"
-          width={300}
-          height={150}
-          priority
-          className="mb-10"
+          src="/images/garden-terracing-after.jpg"
+          alt="Garden Terracing Project"
+          width={1200}
+          height={800}
+          className="w-full h-auto object-cover hover:scale-105 transition duration-700"
         />
+      </div>
 
-        <p className="uppercase tracking-[4px] text-yellow-400 font-semibold mb-6">
-          Practical Solutions. Professional Finish.
+      <div
+        className="absolute -bottom-6 -left-6 px-6 py-4 rounded-2xl bg-zinc-900 border border-zinc-800 shadow-xl"
+      >
+        <p
+          className="text-sm uppercase tracking-widest"
+          style={{ color: "#EEFF00" }}
+        >
+          Featured Project
         </p>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
-          Property Improvements & Maintenance
-        </h1>
-
-        <p className="text-xl text-gray-300 max-w-3xl mb-10">
-          Professional property maintenance and improvement services across
-          Edinburgh, Midlothian, East Lothian and West Lothian.
+        <p className="font-semibold mt-1">
+          Garden Terracing Transformation
         </p>
+      </div>
+    </div>
 
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="tel:07968817387"
-            className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition"
-          >
-            Call Now
-          </a>
-
-          <a
-            href="mailto:info@fixcoproperty.com"
-            className="border border-yellow-400 px-8 py-4 rounded-lg hover:bg-yellow-400 hover:text-black transition"
-          >
-            Email Us
-          </a>
-        </div>
-      </section>
+  </div>
+</section>
 
       {/* SERVICES */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold mb-12">
-          Our Services
+  
+<section className="max-w-7xl mx-auto px-6 py-24">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+        Why Choose FixCo?
         </h2>
+           <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-16">
+            Professional property improvement and maintenance services delivered with
+            quality workmanship, attention to detail and a reliable approach.
+          </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+    <h3 className="text-xl font-semibold mb-3">Quality Workmanship</h3>
+    <p className="text-zinc-400">
+      Every project completed to a professional standard.
+    </p>
+  </div>
 
-          {[
-            "Flooring Installation",
-            "General Electrical Fixtures",
-            "Shelving & Interior Installations",
-            "General Property Maintenance",
-            "Garden & Outdoor Projects",
-            "Summer House & Shed Bases",
-            "Plumbing Repairs",
-            "Flat Pack Assembly",
-            "Handyman Services",
-          ].map((service) => (
-            <div
-              key={service}
-              className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-yellow-400 transition"
-            >
-              <h3 className="font-semibold text-lg">
-                {service}
-              </h3>
-            </div>
-          ))}
+  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+    <h3 className="text-xl font-semibold mb-3">Free Quotations</h3>
+    <p className="text-zinc-400">
+      Clear pricing with no hidden surprises.
+    </p>
+  </div>
 
-        </div>
+  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+    <h3 className="text-xl font-semibold mb-3">Reliable Service</h3>
+    <p className="text-zinc-400">
+      Honest communication and dependable workmanship.
+    </p>
+  </div>
+
+  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+    <h3 className="text-xl font-semibold mb-3">Edinburgh Based</h3>
+    <p className="text-zinc-400">
+      Serving Edinburgh, Midlothian and the surrounding areas.
+    </p>
+  </div>
+</div>
+      <section className="max-w-7xl mx-auto px-6 py-24">
+
+  <h2 className="text-5xl font-bold text-center mb-6">
+    Featured Projects
+  </h2>
+
+  <p className="text-zinc-400 text-center mb-16">
+    Recent examples of completed work.
+  </p>
+
+</section>
+
       </section>
 
       {/* GALLERY */}
