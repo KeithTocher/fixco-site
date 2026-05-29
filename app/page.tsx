@@ -156,6 +156,85 @@ export default function Home() {
     </p>
   </div>
 </div>
+<section className="max-w-5xl mx-auto px-6 py-20 text-center">
+
+  <p
+    className="uppercase tracking-[4px] mb-4 font-semibold"
+    style={{ color: "#EEFF00" }}
+  >
+    Small Jobs Welcome. Larger Projects Delivered.
+  </p>
+
+  <h2 className="text-4xl md:text-5xl font-bold mb-8">
+    Practical Property Improvements For Every Home
+  </h2>
+
+  <p className="text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto">
+    From flooring installations and storage solutions to garage improvements,
+    garden projects and timber base construction, FixCo Property Ltd delivers
+    practical solutions and a professional finish for projects of all sizes.
+  </p>
+
+</section>
+
+<section className="max-w-7xl mx-auto px-6 py-20">
+
+  <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+    What We Do
+  </h2>
+
+  <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-16">
+    Reliable property improvement and maintenance services across Edinburgh and the surrounding areas.
+  </p>
+
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div className="bg-zinc-900 p-8 rounded-2xl">
+      <h3 className="text-xl font-semibold mb-3">Flooring Installation</h3>
+      <p className="text-zinc-400">
+        Laminate flooring and other practical flooring solutions.
+      </p>
+    </div>
+
+    <div className="bg-zinc-900 p-8 rounded-2xl">
+      <h3 className="text-xl font-semibold mb-3">Storage Solutions</h3>
+      <p className="text-zinc-400">
+        Eaves storage, shelving and practical space optimisation.
+      </p>
+    </div>
+
+    <div className="bg-zinc-900 p-8 rounded-2xl">
+      <h3 className="text-xl font-semibold mb-3">Garage Improvements</h3>
+      <p className="text-zinc-400">
+        Garage lining, insulation and organisation projects.
+      </p>
+    </div>
+
+    <div className="bg-zinc-900 p-8 rounded-2xl">
+      <h3 className="text-xl font-semibold mb-3">Garden Projects</h3>
+      <p className="text-zinc-400">
+        Landscaping, terracing, retaining walls and outdoor improvements.
+      </p>
+    </div>
+
+    <div className="bg-zinc-900 p-8 rounded-2xl">
+      <h3 className="text-xl font-semibold mb-3">Timber Bases</h3>
+      <p className="text-zinc-400">
+        Strong foundations for sheds, garden rooms and outdoor structures.
+      </p>
+    </div>
+
+    <div className="bg-zinc-900 p-8 rounded-2xl">
+      <h3 className="text-xl font-semibold mb-3">General Maintenance</h3>
+      <p className="text-zinc-400">
+        Property repairs, upgrades and practical improvement work.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
       <section className="max-w-7xl mx-auto px-6 py-24">
 
   <h2 className="text-5xl font-bold text-center mb-6">
@@ -174,7 +253,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-20">
 
         <h2 className="text-4xl font-bold mb-12">
-          Recent Projects
+          Projects & Case Studies
         </h2>
 
         <div className="space-y-16">
