@@ -31,6 +31,34 @@ const projects = [
 export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen">
+<header className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-zinc-800">
+  <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+ <div>
+  <Image
+    src="/images/fixco-logo.png"
+    alt="FixCo Property Ltd"
+    width={170}
+    height={50}
+  />
+</div>
+
+    <nav className="hidden md:flex gap-8 text-zinc-300">
+      <a href="#services" className="hover:text-white">Services</a>
+      <a href="#projects" className="hover:text-white">Projects</a>
+      <a href="#contact" className="hover:text-white">Contact</a>
+    </nav>
+
+    <a
+      href="tel:07968817387"
+      className="px-5 py-3 rounded-lg font-semibold text-black"
+      style={{ backgroundColor: "#EEFF00" }}
+    >
+      Call Now
+    </a>
+
+  </div>
+</header>
 
 {/* HERO */}
 <section className="max-w-7xl mx-auto px-6 py-16">
@@ -118,7 +146,7 @@ export default function Home() {
 
       {/* SERVICES */}
   
-<section className="max-w-7xl mx-auto px-6 py-24">
+<section id="services" className="max-w-7xl mx-auto px-6 py-24">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
         Why Choose FixCo?
         </h2>
@@ -177,7 +205,7 @@ export default function Home() {
 
 </section>
 
-<section className="max-w-7xl mx-auto px-6 py-20">
+<section id="projects" className="max-w-7xl mx-auto px-6 py-20">
 
   <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
     What We Do
@@ -246,28 +274,30 @@ export default function Home() {
   </p>
 
 </section>
-
       </section>
 
       {/* GALLERY */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
 
         <h2 className="text-4xl font-bold mb-12">
           Projects & Case Studies
         </h2>
 
-        <div className="space-y-16">
+        <div className="grid lg:grid-cols-2 gap-8">
 
           {projects.map((project) => (
             <div
-              key={project.title}
-              className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800"
+              key={project.title}className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-zinc-600 transition-all"
+              
             >
 
               <div className="p-6 border-b border-zinc-800">
                 <h3 className="text-2xl font-bold">
                   {project.title}
                 </h3>
+                <p className="text-zinc-400 mt-2 text-sm">
+  Professional before and after transformation.
+</p>
               </div>
 
               <div className="grid md:grid-cols-2">
@@ -283,7 +313,7 @@ export default function Home() {
                       alt={`${project.title} before`}
                       width={1200}
                       height={800}
-                      className="w-full h-auto hover:scale-105 transition duration-500"
+                      className="w-full h-48 object-cover hover:scale-105 transition duration-500"
                     />
                   </div>
                 </div>
@@ -299,7 +329,7 @@ export default function Home() {
                       alt={`${project.title} after`}
                       width={1200}
                       height={800}
-                      className="w-full h-auto hover:scale-105 transition duration-500"
+                      className="w-full h-48 object-cover hover:scale-105 transition duration-500"
                     />
                   </div>
                 </div>
@@ -314,25 +344,67 @@ export default function Home() {
       {/* CONTACT */}
       <section className="max-w-7xl mx-auto px-6 py-20">
 
-        <div className="bg-zinc-900 rounded-2xl p-10 border border-zinc-800">
+        <div
+  className="rounded-3xl p-12 md:p-20 text-center"
+  style={{ backgroundColor: "#111111" }}
+>
 
-          <h2 className="text-4xl font-bold mb-6">
-            Get A Free Quote
-          </h2>
+  <p
+    className="uppercase tracking-[5px] font-semibold mb-4"
+    style={{ color: "#EEFF00" }}
+  >
+    Ready To Discuss Your Next Project?
+  </p>
 
-          <p className="text-gray-300 mb-8">
-            Contact FixCo Property Ltd today for a free, no-obligation quotation.
-          </p>
+  <h2 className="text-4xl md:text-6xl font-bold mb-8">
+    Get A Free Quote
+  </h2>
 
-          <div className="space-y-3 text-lg">
-            <p>📞 07968 817387</p>
-            <p>✉️ info@fixcoproperty.com</p>
-          </div>
+  <p className="text-zinc-400 max-w-2xl mx-auto mb-12 text-lg">
+    From small repairs and flooring installations to larger property
+    improvement and landscaping projects, we're happy to discuss your requirements.
+  </p>
 
-        </div>
+  <div className="space-y-4 mb-10">
+
+    <p className="text-3xl font-bold">
+      07968 817387
+    </p>
+
+    <p className="text-xl text-zinc-300">
+      info@fixcoproperty.com
+    </p>
+
+  </div>
+
+  <a
+    href="tel:07968817387"
+    className="inline-block px-10 py-5 rounded-xl font-semibold text-black text-lg hover:scale-105 transition"
+    style={{ backgroundColor: "#EEFF00" }}
+  >
+    Call Now
+  </a>
+
+</div>
 
       </section>
+<footer className="border-t border-zinc-800 mt-20">
+  <div className="max-w-7xl mx-auto px-6 py-10 text-center">
 
+    <p className="font-bold text-xl mb-3">
+      FixCo Property Ltd
+    </p>
+
+    <p className="text-zinc-400 mb-4">
+      Property Improvements & Maintenance
+    </p>
+
+    <p className="text-zinc-500 text-sm">
+      Edinburgh • Midlothian • East Lothian • West Lothian
+    </p>
+
+  </div>
+</footer>
     </main>
   );
 }
