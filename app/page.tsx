@@ -191,7 +191,7 @@ export default function Home() {
 
       {/* SERVICES */}
   
-<section id="services" className="max-w-7xl mx-auto px-6 py-16">
+<section id="services" className="max-w-7xl mx-auto px-6 py-12">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
         Why Choose FixCo?
         </h2>
@@ -201,35 +201,36 @@ export default function Home() {
           </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+
+  <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
     <h3 className="text-xl font-semibold mb-3">Quality Workmanship</h3>
     <p className="text-zinc-400">
       Every project completed to a professional standard.
     </p>
   </div>
 
-  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+  <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
     <h3 className="text-xl font-semibold mb-3">Free Quotations</h3>
     <p className="text-zinc-400">
       Clear pricing with no hidden surprises.
     </p>
   </div>
 
-  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+  <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
     <h3 className="text-xl font-semibold mb-3">Reliable Service</h3>
     <p className="text-zinc-400">
       Honest communication and dependable workmanship.
     </p>
   </div>
 
-  <div className="bg-zinc-900 p-8 rounded-2xl hover:-translate-y-2 transition-all">
+  <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
     <h3 className="text-xl font-semibold mb-3">Edinburgh Based</h3>
     <p className="text-zinc-400">
       Serving Edinburgh, Midlothian and the surrounding areas.
     </p>
   </div>
 </div>
-<section className="max-w-5xl mx-auto px-6 py-20 text-center">
+<section className="max-w-5xl mx-auto px-6 py-8 text-center">
 
   <p
     className="uppercase tracking-[4px] mb-4 font-semibold"
@@ -250,7 +251,7 @@ export default function Home() {
 
 </section>
 
-<section id="projects" className="max-w-7xl mx-auto px-6 py-14">
+<section id="projects" className="max-w-7xl mx-auto px-6 py-10">
 
   <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
     What We Do
@@ -260,65 +261,74 @@ export default function Home() {
     Reliable property improvement and maintenance services across Edinburgh and the surrounding areas.
   </p>
 
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <div className="bg-zinc-900 p-8 rounded-2xl">
+    <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-semibold mb-3">Flooring Installation</h3>
       <p className="text-zinc-400">
         Laminate flooring and other practical flooring solutions.
       </p>
     </div>
 
-    <div className="bg-zinc-900 p-8 rounded-2xl">
+    <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-semibold mb-3">Storage Solutions</h3>
       <p className="text-zinc-400">
         Eaves storage, shelving and practical space optimisation.
       </p>
     </div>
 
-    <div className="bg-zinc-900 p-8 rounded-2xl">
+    <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-semibold mb-3">Garage Improvements</h3>
       <p className="text-zinc-400">
         Garage lining, insulation and organisation projects.
       </p>
     </div>
 
-    <div className="bg-zinc-900 p-8 rounded-2xl">
+    <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-semibold mb-3">Garden Projects</h3>
       <p className="text-zinc-400">
         Landscaping, terracing, retaining walls and outdoor improvements.
       </p>
     </div>
 
-    <div className="bg-zinc-900 p-8 rounded-2xl">
+    <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-semibold mb-3">Timber Bases</h3>
       <p className="text-zinc-400">
         Strong foundations for sheds, garden rooms and outdoor structures.
       </p>
     </div>
 
-    <div className="bg-zinc-900 p-8 rounded-2xl">
+    <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-semibold mb-3">General Maintenance</h3>
       <p className="text-zinc-400">
-        Property repairs, upgrades and practical improvement work.
+        Ongoing repairs, upgrades and practical improvement work for homeowners.
       </p>
     </div>
+
+<div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
+  <h3 className="text-xl font-semibold mb-3">
+    Handyman & Home Repairs
+  </h3>
+
+  <p className="text-zinc-400">
+    Flat-pack assembly, TV mounting, shelving, sealing and general repairs.
+  </p>
+</div>
+
+<div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
+  <h3 className="text-xl font-semibold mb-3">
+    Home Installations
+  </h3>
+
+  <p className="text-zinc-400">
+    Replacement light fittings, socket fronts, fixtures and fittings.
+  </p>
+</div>
 
   </div>
 
 </section>
-
-      <section className="max-w-7xl mx-auto px-6 py-16">
-
-  <h2 className="text-5xl font-bold text-center mb-6">
-    Featured Work
-  </h2>
-
-  <p className="text-zinc-400 text-center mb-16">
-    Recent examples of completed work.
-  </p>
-
-</section>
+    
       </section>
 
       {/* GALLERY */}
