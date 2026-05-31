@@ -3,26 +3,35 @@ import Image from "next/image";
 const projects = [
   {
     title: "Bathroom Flooring",
+    description: "Existing flooring removed and replaced with a durable modern finish.",
     before: "/images/bathroom-flooring-before.jpg",
     after: "/images/bathroom-flooring-after.jpg",
   },
+
   {
     title: "Eaves Cupboard Storage",
+    description: "Unused loft space transformed into practical accessible storage.",
     before: "/images/eves-cupboard-before.jpg",
     after: "/images/eves-cupboard-after.jpg",
   },
+
   {
     title: "Garage Lining",
+    description: "Garage lined and insulated to create a cleaner and more usable space.",
     before: "/images/garage-lining-before.jpg",
     after: "/images/garage-lining-after.jpg",
   },
+
   {
     title: "Garden Groundworks",
+    description: "Ground preparation and landscaping improvements completed.",
     before: "/images/garden-ground-before.jpg",
     after: "/images/garden-ground-after.jpg",
   },
+
   {
     title: "Garden Terracing",
+    description: "Multi-level retaining walls and terracing to maximise usable garden space.",
     before: "/images/garden-terracing-before.jpg",
     after: "/images/garden-terracing-after.jpg",
   },
@@ -142,11 +151,47 @@ export default function Home() {
     </div>
 
   </div>
+  <section className="max-w-7xl mx-auto px-6 py-14">
+
+  <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-[#EEFF00] transition-all duration-300">
+
+    <Image
+      src="/images/raised-timber-base.jpeg"
+      alt="Summer House Timber Base"
+      width={1400}
+      height={900}
+      className="w-full h-[400px] object-cover"
+    />
+
+    <div className="p-10">
+
+      <p
+        className="uppercase tracking-[4px] font-semibold mb-3"
+        style={{ color: "#EEFF00" }}
+      >
+        Featured Project
+      </p>
+
+      <h3 className="text-4xl font-bold mb-4">
+        Summer House Timber Base
+      </h3>
+
+      <p className="text-zinc-400 text-lg max-w-3xl">
+        Precision-built timber base constructed to provide a stable,
+        level foundation for a summer house, garden room or shed.
+        Designed for long-term durability and a professional finish.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 </section>
 
       {/* SERVICES */}
   
-<section id="services" className="max-w-7xl mx-auto px-6 py-24">
+<section id="services" className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
         Why Choose FixCo?
         </h2>
@@ -205,7 +250,7 @@ export default function Home() {
 
 </section>
 
-<section id="projects" className="max-w-7xl mx-auto px-6 py-20">
+<section id="projects" className="max-w-7xl mx-auto px-6 py-14">
 
   <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
     What We Do
@@ -263,10 +308,10 @@ export default function Home() {
 
 </section>
 
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      <section className="max-w-7xl mx-auto px-6 py-16">
 
   <h2 className="text-5xl font-bold text-center mb-6">
-    Featured Projects
+    Featured Work
   </h2>
 
   <p className="text-zinc-400 text-center mb-16">
@@ -277,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* GALLERY */}
-      <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
+      <section id="contact" className="max-w-7xl mx-auto px-6 py-14">
 
         <h2 className="text-4xl font-bold mb-12">
           Projects & Case Studies
@@ -287,7 +332,8 @@ export default function Home() {
 
           {projects.map((project) => (
             <div
-              key={project.title}className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-zinc-600 transition-all"
+              key={project.title}
+              className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300"
               
             >
 
@@ -295,16 +341,20 @@ export default function Home() {
                 <h3 className="text-2xl font-bold">
                   {project.title}
                 </h3>
-                <p className="text-zinc-400 mt-2 text-sm">
-  Professional before and after transformation.
-</p>
+               <p className="text-zinc-400 mt-2 text-sm">
+               {project.description}
+              </p>
               </div>
 
               <div className="grid md:grid-cols-2">
 
+
                 <div className="p-4">
-                  <p className="text-yellow-400 font-semibold mb-4">
-                    BEFORE
+                  <p
+  className="font-semibold mb-4"
+  style={{ color: "#EEFF00" }}
+>
+  BEFORE
                   </p>
 
                   <div className="overflow-hidden rounded-xl">
@@ -319,8 +369,11 @@ export default function Home() {
                 </div>
 
                 <div className="p-4">
-                  <p className="text-yellow-400 font-semibold mb-4">
-                    AFTER
+                  <p
+  className="font-semibold mb-4"
+  style={{ color: "#EEFF00" }}
+>
+  AFTER
                   </p>
 
                   <div className="overflow-hidden rounded-xl">
@@ -342,7 +395,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      <section className="max-w-7xl mx-auto px-6 py-14">
 
         <div
   className="rounded-3xl p-12 md:p-20 text-center"
