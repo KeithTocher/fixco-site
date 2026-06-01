@@ -440,7 +440,7 @@ export default function Home() {
       <section id="contact" className="max-w-7xl mx-auto px-6 py-14">
 
         <div
-  className="rounded-3xl p-12 md:p-20 text-center"
+  className="rounded-3xl p-8 md:p-10 text-center"
   style={{ backgroundColor: "#111111" }}
 >
 
@@ -483,7 +483,7 @@ export default function Home() {
 </div>
 
       </section>
-<footer className="border-t border-zinc-800 mt-10">
+<footer className="border-t border-zinc-800 mt-4">
   <div className="max-w-7xl mx-auto px-6 py-10 text-center">
 
     <p className="font-bold text-xl mb-3">
