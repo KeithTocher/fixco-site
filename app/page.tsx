@@ -39,7 +39,19 @@ const projects = [
 
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen">
+    <main
+  className="text-white min-h-screen"
+  style={{
+    background: `
+      radial-gradient(
+        circle at top,
+        rgba(238,255,0,0.07) 0%,
+        rgba(0,0,0,1) 40%
+      ),
+      #000000
+    `,
+  }}
+>
 <header className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-zinc-800">
   <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
@@ -82,15 +94,27 @@ export default function Home() {
   <div className="grid lg:grid-cols-2 gap-10 items-center">
 
     {/* Left Side */}
-    <div>
-      <Image
-        src="/images/fixco-logo.png"
-        alt="FixCo Property Ltd"
-        width={220}
-        height={110}
-        priority
-        className="mb-8"
-      />
+    <div className="space-y-4 mb-8 text-lg">
+
+  <p className="flex items-center gap-3">
+    <span style={{ color: "#EEFF00" }}>✓</span>
+    Flooring & Property Improvements
+  </p>
+
+  <p className="flex items-center gap-3">
+    <span style={{ color: "#EEFF00" }}>✓</span>
+    Garden Projects & Timber Bases
+  </p>
+
+  <p className="flex items-center gap-3">
+    <span style={{ color: "#EEFF00" }}>✓</span>
+    Handyman & Home Repairs
+  </p>
+
+  <p className="flex items-center gap-3">
+    <span style={{ color: "#EEFF00" }}>✓</span>
+    Edinburgh Based
+  </p>
 
       <p
         className="uppercase tracking-[6px] font-semibold mb-6"
