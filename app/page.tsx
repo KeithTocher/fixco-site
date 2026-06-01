@@ -132,8 +132,8 @@ export default function Home() {
       </h1>
 
       <p className="text-xl text-zinc-300 max-w-xl mb-10">
-        Professional property improvement and maintenance services
-        across Edinburgh, Midlothian, East Lothian and West Lothian.
+        Professional property improvement and maintenance services.
+        Serving Edinburgh and selected surrounding areas.
       </p>
 
       <div className="flex flex-wrap gap-4">
