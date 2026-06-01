@@ -52,11 +52,19 @@ export default function Home() {
   />
 </div>
 
-    <nav className="hidden md:flex gap-8 text-zinc-300">
-      <a href="#services" className="hover:text-white">Services</a>
-      <a href="#projects" className="hover:text-white">Projects</a>
-      <a href="#contact" className="hover:text-white">Contact</a>
-    </nav>
+  <nav className="hidden md:flex gap-8 text-zinc-300">
+  <a href="#services" className="hover:text-[#EEFF00] transition-colors">
+    Services
+  </a>
+
+  <a href="#gallery" className="hover:text-[#EEFF00] transition-colors">
+    Projects
+  </a>
+
+  <a href="#contact" className="hover:text-[#EEFF00] transition-colors">
+    Contact
+  </a>
+</nav>
 
     <a
       href="tel:07968817387"
@@ -70,8 +78,8 @@ export default function Home() {
 </header>
 
 {/* HERO */}
-<section className="max-w-7xl mx-auto px-6 py-16">
-  <div className="grid lg:grid-cols-2 gap-16 items-center">
+<section className="max-w-7xl mx-auto px-6 py-10">
+  <div className="grid lg:grid-cols-2 gap-10 items-center">
 
     {/* Left Side */}
     <div>
@@ -192,11 +200,11 @@ export default function Home() {
 
       {/* SERVICES */}
   
-<section id="services" className="max-w-7xl mx-auto px-6 py-12">
+<section id="why-us" className="max-w-7xl mx-auto px-6 py-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-        Why Choose FixCo?
+        Why Homeowners Choose FixCo?
         </h2>
-           <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-16">
+           <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-10">
             Professional property improvement and maintenance services delivered with
             quality workmanship, attention to detail and a reliable approach.
           </p>
@@ -231,6 +239,7 @@ export default function Home() {
     </p>
   </div>
 </div>
+</section>
 <section className="max-w-5xl mx-auto px-6 py-8 text-center">
 
   <p
@@ -252,7 +261,7 @@ export default function Home() {
 
 </section>
 
-<section id="projects" className="max-w-7xl mx-auto px-6 py-10">
+<section id="services" className="max-w-7xl mx-auto px-6 py-10">
 
   <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
     What We Do
@@ -288,7 +297,7 @@ export default function Home() {
     <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-[#EEFF00] hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-semibold mb-3">Garden Projects</h3>
       <p className="text-zinc-400">
-        Landscaping, terracing, retaining walls and outdoor improvements.
+        Landscaping, terracing, outdoor improvements and clearance work.
       </p>
     </div>
 
@@ -329,11 +338,9 @@ export default function Home() {
   </div>
 
 </section>
-    
-      </section>
 
       {/* GALLERY */}
-      <section id="contact" className="max-w-7xl mx-auto px-6 py-14">
+      <section id="gallery" className="max-w-7xl mx-auto px-6 py-14">
 
         <h2 className="text-4xl font-bold mb-12">
           Projects & Case Studies
@@ -406,7 +413,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section className="max-w-7xl mx-auto px-6 py-14">
+      <section id="contact" className="max-w-7xl mx-auto px-6 py-14">
 
         <div
   className="rounded-3xl p-12 md:p-20 text-center"
@@ -452,7 +459,7 @@ export default function Home() {
 </div>
 
       </section>
-<footer className="border-t border-zinc-800 mt-20">
+<footer className="border-t border-zinc-800 mt-10">
   <div className="max-w-7xl mx-auto px-6 py-10 text-center">
 
     <p className="font-bold text-xl mb-3">
@@ -464,7 +471,7 @@ export default function Home() {
     </p>
 
     <p className="text-zinc-500 text-sm">
-      Edinburgh • Midlothian • East Lothian • West Lothian
+      Serving Edinburgh & Surrounding Areas
     </p>
 
   </div>
