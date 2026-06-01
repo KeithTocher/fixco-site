@@ -151,6 +151,8 @@ export default function Home() {
     </div>
 
   </div>
+
+  </section>
   <section className="max-w-7xl mx-auto px-6 py-14">
 
   <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-[#EEFF00] transition-all duration-300">
@@ -186,7 +188,6 @@ export default function Home() {
 
   </div>
 
-</section>
 </section>
 
       {/* SERVICES */}
