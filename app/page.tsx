@@ -96,7 +96,7 @@ export default function Home() {
   <div className="grid lg:grid-cols-2 gap-10 items-center">
 
     {/* Left Side */}
-    <div className="space-y-4 mb-8 text-lg">
+    <div className="space-y-3 mb-6 text-lg">
 
   <p className="flex items-center gap-3">
     <span style={{ color: "#EEFF00" }}>✓</span>
@@ -187,7 +187,7 @@ export default function Home() {
   </div>
 
   </section>
-  <section className="max-w-7xl mx-auto px-6 py-10">
+  <section className="max-w-7xl mx-auto px-6 py-6">
 
   <div
     className="rounded-3xl p-10 border border-zinc-800"
@@ -208,7 +208,7 @@ export default function Home() {
     <p className="text-zinc-400 text-lg max-w-4xl">
       Many Edinburgh properties have narrow side passages, stepped gardens,
       basement access, terraced layouts and locations where machinery simply
-      cannot reach. We are happy to quote for projects requiring manual access,
+      cannot reach. We undertake projects requiring manual access,
       careful planning and a practical approach.
     </p>
 
