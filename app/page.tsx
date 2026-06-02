@@ -64,7 +64,7 @@ export default function Home() {
   />
 </div>
 
-  <nav className="hidden md:flex gap-8 text-zinc-300">
+  <nav className="flex gap-4 text-sm text-zinc-300">
   <a href="#services" className="hover:text-[#EEFF00] transition-colors">
     Services
   </a>
