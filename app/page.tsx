@@ -190,7 +190,7 @@ export default function Home() {
   <section className="max-w-7xl mx-auto px-6 py-6">
 
   <div
-    className="rounded-3xl p-10 border border-zinc-800"
+    className="rounded-3xl p-6 border border-zinc-800"
     style={{ backgroundColor: "#111111" }}
   >
 
@@ -201,7 +201,7 @@ export default function Home() {
       Restricted Access Specialists
     </p>
 
-    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <h2 className="text-3xl md:text-4xl font-bold mb-3">
       Restricted Access? No Problem.
     </h2>
 
@@ -375,7 +375,7 @@ export default function Home() {
   </h3>
 
   <p className="text-zinc-400">
-    Flat-pack assembly, TV mounting, shelving, sealing and general repairs.
+    Flat-pack assembly, TV mounting, shelving, sealing and general plumbing repairs.
   </p>
 </div>
 
