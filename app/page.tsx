@@ -115,7 +115,7 @@ export default function Home() {
 
   <p className="flex items-center gap-3">
     <span style={{ color: "#EEFF00" }}>✓</span>
-    ✓ Restricted Access Specialists
+    Restricted Access Specialists
   </p>
 
       <p
