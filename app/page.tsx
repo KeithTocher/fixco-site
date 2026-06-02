@@ -56,7 +56,7 @@ export default function Home() {
 <header className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-zinc-800">
   <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-<Link href="/">
+<Link href="/" className="shrink-0">
   <Image
     src="/images/fixco-logo.png"
     alt="FixCo Property Ltd"
