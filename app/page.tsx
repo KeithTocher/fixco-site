@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 const projects = [
@@ -55,14 +56,15 @@ export default function Home() {
 <header className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-zinc-800">
   <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
- <div>
+<Link href="/">
   <Image
     src="/images/fixco-logo.png"
     alt="FixCo Property Ltd"
     width={170}
     height={50}
+    className="w-auto h-auto"
   />
-</div>
+</Link>
 
   <nav className="hidden md:flex gap-8 text-zinc-300">
   <a href="#services" className="hover:text-[#EEFF00] transition-colors">
