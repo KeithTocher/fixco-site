@@ -187,6 +187,34 @@ export default function Home() {
   </div>
 
   </section>
+  <section className="max-w-7xl mx-auto px-6 py-10">
+
+  <div
+    className="rounded-3xl p-10 border border-zinc-800"
+    style={{ backgroundColor: "#111111" }}
+  >
+
+    <p
+      className="uppercase tracking-[4px] font-semibold mb-3"
+      style={{ color: "#EEFF00" }}
+    >
+      Restricted Access Specialists
+    </p>
+
+    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      Restricted Access? No Problem.
+    </h2>
+
+    <p className="text-zinc-400 text-lg max-w-4xl">
+      Many Edinburgh properties have narrow side passages, stepped gardens,
+      basement access, terraced layouts and locations where machinery simply
+      cannot reach. We are happy to quote for projects requiring manual access,
+      careful planning and a practical approach.
+    </p>
+
+  </div>
+
+</section>
   <section className="max-w-7xl mx-auto px-6 py-14">
 
   <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-[#EEFF00] transition-all duration-300">
